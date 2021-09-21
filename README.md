@@ -6,8 +6,10 @@
 
 ## Escopo do produto
 
-TODO...
+Site com um jogo que imita antigo jogo Genius
 
 ## Escopo do projeto
 
-TODO...
+Desenvolvimento do html do site com respectivo css
+
+Implementação com javascript para manipular o css e fornecer a dinâmica do jogo
