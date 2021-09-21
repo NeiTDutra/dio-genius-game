@@ -122,7 +122,7 @@ let playGame = () => {
 
     alert('Iniciar novo jogo...');
     score = 0;
-    // countDown();
+    countDown();
     setTimeout( () => {
 
         nextLevel();
@@ -130,17 +130,21 @@ let playGame = () => {
 }
 
 // Contagem regressiva para inicio do jogo
-/*let countDown = () => {
-    for(let c = 3; c > 0; c--) {
+var count = 4;
+var tempo = document.getElementById("tempo");
 
-        setTimeout( () => {
-
-            document.querySelector('.mask').innerHTML = '<h1>'+c+'</h1>';
-        }, 3000);
+function countDown() {
+     if (count > 0){
+        count -= 1;
+        if (count == 0) {
+            count = "Play Game";
+        }else if(count < 4){
+            count = "0" + count;
+        }
+        tempo.innerText = count;
+        setTimeout(countDown, 1000); 
     }
-
-    // document.querySelector('.mask').style.display = 'none';
-}*/
+}
 
 // Eventos de click do jogo
 green.onclick = () => click(0);
