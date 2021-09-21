@@ -113,6 +113,7 @@ let loose = () => {
 
     order = [];
     clickedOrder = [];
+    score = 0;
 
     playGame();
 }
